@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>SOLVING CUBIC EQUATION</title>
+   </head>
+   <body style='background-color:aqua'>
+         <marquee style='background-color:teal;height:1.5cm;font-size:50px'>DISCLAIMER :  ENTER THE CORRECT VALUES !!</marquee>
+         
+         <form style='padding:40px;width:max-width;font-size:26px ;font-weight:bold' action='{%url "emath:cubic" %}' method=POST>
+            {%csrf_token%} 
+              <br></br>
+                {% for field in form  %}
+    {{ field.errors }}
+    <li style='font-size:30px'> {{ field.label_tag }} {{ field }} </li>
+    <br>
+    
+  {% endfor %}
+                
+            <button> <input type='submit'></button>
+         </form>
+    </body>
+</head>
+       

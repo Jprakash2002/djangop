@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+</html>
+     <head>
+          <title> Result </title>
+     </head>
+     <body style='background-color:yellow'>
+        <div style='padding=110px'>
+               <p style='font-size:60px'> THE ROOTS ARE   </p>
+               <ul>
+                   {%for ress in res%}
+                         <li style='font-size:30px'>{{ress}}</li>
+                         <br>
+                   {%endfor%}
+                </ul>
+        <a href='{%url "emath:quadratic"%}' style='text-decoration:none'><button>RETRY</button></a>
+        </div>
+    </body>
+</html>

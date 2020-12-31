@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+     <head>
+           <title>Emath Index</title>
+           <style>
+                 body{
+                     background-color:black
+                 }
+                 #roots{
+                     background-color:orange;
+                     border:solid black;
+                     width:max-width
+                 }
+                 button:hover{
+                     background-color:gray
+                 }
+            </style>
+     </head>
+     <body>
+            <marquee style='background-color:palegreen; font-size:50px;height:1.5cm;'>WELCOME TO EMATH !! :)</marquee>
+            <a href='{% url "emath:root"%}'style='text-decoration:none;color:black' >
+            <div id='roots' >
+                   <p style='font-size:30px;text-align:center;font-size:60px'>ROOTS OF THE EQUATION</p>
+                   <br>
+                   
+            </div>
+            </a>
+     </body>
+</html>
